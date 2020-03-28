@@ -1,0 +1,126 @@
+﻿<UserControl
+    x:Class="HappyRoute4.Views.MenuView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    >
+
+    <Grid>
+        <!--No Edit-->
+        <StackPanel Visibility="{Binding MapVimo.IsEdit, Converter={StaticResource BnezConverter}, ConverterParameter=reverse}">
+            <StackPanel>
+                <Button Style="{StaticResource SplitViewMenuButtonStyle}" Command="{Binding ShowCatalogCommand}">
+                    <StackPanel Orientation="Horizontal">
+                        <FontIcon Glyph="&#xE1D3;" Style="{StaticResource SplitViewMenuFontIconStyle}"/>
+                        <TextBlock x:Uid="MenuShowCatalog"/>
+                    </StackPanel>
+                </Button>
+
+                <Button Style="{StaticResource SplitViewMenuButtonStyle}" Command="{Binding FileCommand}">
+                    <StackPanel Orientation="Horizontal">
+                        <FontIcon Glyph="&#xEC50;" Style="{StaticResource SplitViewMenuFontIconStyle}"/>
+                        <TextBlock x:Uid="MenuFile"/>
+                    </StackPanel>
+                </Button>
+
+                <Button Style="{StaticResource SplitViewMenuButtonStyle}" Command="{Binding SettingsCommand}">
+                    <StackPanel Orientation="Horizontal">
+                        <FontIcon Glyph="&#xE713;" Style="{StaticResource SplitViewMenuFontIconStyle}"/>
+                        <TextBlock x:Uid="MenuSettings"/>
+                    </StackPanel>
+                </Button>
+
+                <Button Style="{StaticResource SplitViewMenuButtonStyle}" Command="{Binding EditOnCommand}">
+                    <StackPanel Orientation="Horizontal">
+                        <FontIcon Glyph="&#xE70F;" Style="{StaticResource SplitViewMenuFontIconStyle}"/>
+                        <TextBlock x:Uid="MenuEdit"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+
+        <!--Edit-->
+        <StackPanel Visibility="{Binding MapVimo.IsEdit, Converter={StaticResource BnezConverter}}">
+            <StackPanel>
+                <Button Style="{StaticResource SplitViewMenuButtonStyle}" Command="{Binding EditMoveCommand}">
+                    <StackPanel Orientation="Horizontal">
+                        <FontIcon Glyph="&#xE97A;" Style="{StaticResource SplitViewMenuFontIconStyle}"/>
+                        <TextBlock x:Uid="ApbMove"/>
+                    </StackPanel>
+                </Button>
+
+                <Button Style="{StaticResource SplitViewMenuButtonStyle}" Command="{Binding EditAlignCommand}">
+                    <StackPanel Orientation="Horizontal">
+                        <FontIcon Glyph="&#xE1A2;" Style="{StaticResource SplitViewMenuFontIconStyle}"/>
+                        <TextBlock x:Uid="ApbAlign"/>
+                    </StackPanel>
+                </Button>
+
+                <Button Style="{StaticResource SplitViewMenuButtonStyle}" Command="{Binding EditCreateCommand}">
+                    <StackPanel Orientation="Horizontal">
+                        <FontIcon Glyph="&#xE958;" Style="{StaticResource SplitViewMenuFontIconStyle}"/>
+                        <TextBlock x:Uid="ApbCreate"/>
+                    </StackPanel>
+                </Button>
+
+                <Button Style="{StaticResource SplitViewMenuButtonStyle}" Command="{Binding ShowLinesCommand}">
+                    <StackPanel Orientation="Horizontal">
+                        <FontIcon Glyph="&#xE71D;" Style="{StaticResource SplitViewMenuFontIconStyle}"/>
+                        <TextBlock x:Uid="ApbShowLines"/>
+                    </StackPanel>
+                </Button>
+
+                <Button Style="{StaticResource SplitViewMenuButtonStyle}" Command="{Binding ParamCommand}">
+                    <StackPanel Orientation="Horizontal">
+                        <FontIcon Glyph="&#xE115;" Style="{StaticResource SplitViewMenuFontIconStyle}"/>
+                        <TextBlock x:Uid="MenuSettings"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+
+        <!--Bottom No Edit-->
+        <StackPanel VerticalAlignment="Bottom"
+                    Visibility="{Binding MapVimo.IsEdit, Converter={StaticResource BnezConverter}, ConverterParameter=reverse}">
+            <Button Style="{StaticResource SplitViewMenuButtonStyle}" Command="{Binding CharactersCommand}"
+                    Visibility="{Binding MapVimo.Map.Param.NumberNames, Converter={StaticResource NumberNamesToVisibilityConverter}}">
+                <StackPanel Orientation="Horizontal">
+                    <FontIcon Glyph="&#xE8C1;" Style="{StaticResource SplitViewMenuFontIconStyle}"/>
+                    <TextBlock x:Uid="MenuCharacters"/>
+                </StackPanel>
+            </Button>
+
+            <Button Style="{StaticResource SplitViewMenuButtonStyle}" Command="{Binding ShowRouteCommand}"
+                        Visibility="{Binding MapVimo.IsReadyShowRoute, Converter={StaticResource BnezConverter}}">
+                <StackPanel Orientation="Horizontal">
+                    <FontIcon Glyph="&#xE8BC;" Style="{StaticResource SplitViewMenuFontIconStyle}"/>
+                    <TextBlock x:Uid="MenuShowRoute"/>
+                </StackPanel>
+            </Button>
+
+            <Button Style="{StaticResource SplitViewMenuButtonStyle}" Command="{Binding ClearSelectionCommand}">
+                <StackPanel Orientation="Horizontal">
+                    <FontIcon Glyph="&#xE8E6;" Style="{StaticResource SplitViewMenuFontIconStyle}"/>
+                    <TextBlock x:Uid="MenuClearSelection"/>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+
+        <!--Bottom Edit-->
+        <StackPanel VerticalAlignment="Bottom"
+                    Visibility="{Binding MapVimo.IsEdit, Converter={StaticResource BnezConverter}}">
+            <Button Style="{StaticResource SplitViewMenuButtonStyle}" Command="{Binding EditOffCommand}">
+                <StackPanel Orientation="Horizontal">
+                    <FontIcon Glyph="&#xE74E;" Style="{StaticResource SplitViewMenuFontIconStyle}"/>
+                    <TextBlock x:Uid="MenuEditOff"/>
+                </StackPanel>
+            </Button>
+
+            <Button Style="{StaticResource SplitViewMenuButtonStyle}" Command="{Binding DiscardChangesCommand}">
+                <StackPanel Orientation="Horizontal">
+                    <FontIcon Glyph="&#xE894;" Style="{StaticResource SplitViewMenuFontIconStyle}"/>
+                    <TextBlock x:Uid="ApbDiscardChanges"/>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+    </Grid>
+</UserControl>

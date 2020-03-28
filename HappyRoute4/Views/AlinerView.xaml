@@ -1,0 +1,11 @@
+﻿<UserControl
+    x:Class="HappyRoute4.Views.AlinerView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:common="using:HappyRoute4.Common"
+    >
+
+    <Grid x:Name="root">
+        <common:TabView ItemsSource="{Binding Routs}"/>
+    </Grid>
+</UserControl>

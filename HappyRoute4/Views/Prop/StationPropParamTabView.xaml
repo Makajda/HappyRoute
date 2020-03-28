@@ -1,0 +1,20 @@
+﻿<UserControl
+    x:Class="HappyRoute4.Views.Prop.StationPropParamTabView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:common="using:HappyRoute4.Common"
+    >
+
+    <UserControl.Resources>
+        <Style TargetType="common:Paramer">
+            <Setter Property="Margin" Value="10"/>
+        </Style>
+    </UserControl.Resources>
+
+    <StackPanel>
+        <common:Paramer x:Uid="ParamRadius" IsZeroVisible="True" Value="{Binding Radius,Mode=TwoWay}"/>
+        <common:Paramer x:Uid="ParamTextIndent" IsZeroVisible="True" Value="{Binding TextIndent,Mode=TwoWay}"/>
+        <common:Paramer x:Uid="ParamFontSize" IsZeroVisible="True" Value="{Binding FontSize,Mode=TwoWay}"/>
+        <common:Paramer x:Uid="ParamTransferWeight" IsZeroVisible="True" Value="{Binding TransferWeight,Mode=TwoWay}"/>
+    </StackPanel>
+</UserControl>

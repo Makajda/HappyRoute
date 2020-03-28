@@ -1,0 +1,45 @@
+﻿<UserControl
+    x:Class="HappyRoute4.Views.FileNameView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    >
+
+    <UserControl.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+        </Style>
+    </UserControl.Resources>
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition />
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.ColumnSpan="2" Text="{Binding Title}" HorizontalAlignment="Center" Margin="10"
+                   Style="{StaticResource SubtitleTextBlockStyle}"/>
+        
+        <TextBlock Grid.Row="1" Grid.Column="0" x:Uid="FileName"
+                   Visibility="{Binding IsGetName, Converter={StaticResource BnezConverter}}"/>
+        
+        <TextBlock Grid.Row="1" Grid.Column="1" x:Uid="FileExist" HorizontalAlignment="Right" Foreground="Red"
+                   Visibility="{Binding IsAlreadyName, Converter={StaticResource BnezConverter}}"/>
+        
+        <TextBox Grid.Row="2" Grid.ColumnSpan="2" Text="{Binding NewName, Mode=TwoWay}"
+                 TextChanged="Name_TextChanged" Padding="5" x:Name="name"
+                 Visibility="{Binding IsGetName, Converter={StaticResource BnezConverter}}"/>
+        
+        <Button Grid.Row="3" Content="{Binding TitleAction}" Command="{Binding GoCommand}"/>
+        
+        <Button Grid.Row="3" Grid.Column="1" x:Uid="Cancel" Command="{Binding CancelCommand}"/>
+    </Grid>
+
+</UserControl>

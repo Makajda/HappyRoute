@@ -1,0 +1,52 @@
+﻿<UserControl
+    x:Class="HappyRoute4.Views.FileMenuView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    >
+
+    <StackPanel Width="333" Padding="33">
+        <Button Style="{StaticResource SplitViewMenuButtonStyle}" Command="{Binding NewCommand}">
+            <StackPanel Orientation="Horizontal">
+                <FontIcon Glyph="&#xE1DA;" Style="{StaticResource SplitViewMenuFontIconStyle}"/>
+                <TextBlock x:Uid="ApbNew"/>
+            </StackPanel>
+        </Button>
+
+        <Button Style="{StaticResource SplitViewMenuButtonStyle}" Command="{Binding DeleteCommand}"
+                Visibility="{Binding MapVimo.MapFile.IsMy, Converter={StaticResource BnezConverter}}">
+            <StackPanel Orientation="Horizontal">
+                <FontIcon Glyph="&#xE106;" Style="{StaticResource SplitViewMenuFontIconStyle}"/>
+                <TextBlock x:Uid="ApbDelete"/>
+            </StackPanel>
+        </Button>
+
+        <Button Style="{StaticResource SplitViewMenuButtonStyle}" Command="{Binding CopyCommand}">
+            <StackPanel Orientation="Horizontal">
+                <FontIcon Glyph="&#xE16F;" Style="{StaticResource SplitViewMenuFontIconStyle}"/>
+                <TextBlock x:Uid="ApbCopy"/>
+            </StackPanel>
+        </Button>
+
+        <Button Style="{StaticResource SplitViewMenuButtonStyle}" Command="{Binding RenameCommand}"
+                Visibility="{Binding MapVimo.MapFile.IsMy, Converter={StaticResource BnezConverter}}">
+            <StackPanel Orientation="Horizontal">
+                <FontIcon Glyph="&#xE13E;" Style="{StaticResource SplitViewMenuFontIconStyle}"/>
+                <TextBlock x:Uid="ApbRename"/>
+            </StackPanel>
+        </Button>
+
+        <Button Style="{StaticResource SplitViewMenuButtonStyle}" Command="{Binding ImportCommand}">
+            <StackPanel Orientation="Horizontal">
+                <FontIcon Glyph="&#xE150;" Style="{StaticResource SplitViewMenuFontIconStyle}"/>
+                <TextBlock x:Uid="ApbImport"/>
+            </StackPanel>
+        </Button>
+
+        <Button Style="{StaticResource SplitViewMenuButtonStyle}" Command="{Binding ExportCommand}">
+            <StackPanel Orientation="Horizontal">
+                <FontIcon Glyph="&#xE1AD;" Style="{StaticResource SplitViewMenuFontIconStyle}"/>
+                <TextBlock x:Uid="ApbExport"/>
+            </StackPanel>
+        </Button>
+    </StackPanel>
+</UserControl>

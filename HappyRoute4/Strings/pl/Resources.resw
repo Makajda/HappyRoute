@@ -1,0 +1,532 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddButton.Content" xml:space="preserve">
+    <value>Dodaj</value>
+    <comment>Добавить</comment>
+  </data>
+  <data name="AddLines.Content" xml:space="preserve">
+    <value>Dodaj wiersze</value>
+    <comment>Добавить линии</comment>
+  </data>
+  <data name="AlineNames.Content" xml:space="preserve">
+    <value>Dostosowanie nazwy</value>
+    <comment>Выровнять названия</comment>
+  </data>
+  <data name="ApbAlign.Text" xml:space="preserve">
+    <value>Wyrównaj</value>
+    <comment>Ровнять</comment>
+  </data>
+  <data name="ApbCopy.Text" xml:space="preserve">
+    <value>Kopiuj</value>
+    <comment>Копировать</comment>
+  </data>
+  <data name="ApbCreate.Text" xml:space="preserve">
+    <value>Tworzenie</value>
+    <comment>Создавать</comment>
+  </data>
+  <data name="ApbDelete.Text" xml:space="preserve">
+    <value>Usuń</value>
+    <comment>Удалить</comment>
+  </data>
+  <data name="ApbDiscardChanges.Text" xml:space="preserve">
+    <value>Odrzuć zmiany</value>
+    <comment>Discard changes</comment>
+  </data>
+  <data name="ApbExport.Text" xml:space="preserve">
+    <value>Eksportuj</value>
+    <comment>Экспорт</comment>
+  </data>
+  <data name="ApbImport.Text" xml:space="preserve">
+    <value>Importuj</value>
+    <comment>Импорт</comment>
+  </data>
+  <data name="ApbMove.Text" xml:space="preserve">
+    <value>Przenieś</value>
+    <comment>Move</comment>
+  </data>
+  <data name="ApbNew.Text" xml:space="preserve">
+    <value>Nowy</value>
+    <comment>New</comment>
+  </data>
+  <data name="ApbRename.Text" xml:space="preserve">
+    <value>Zmień nazwę</value>
+    <comment>Переименовать</comment>
+  </data>
+  <data name="ApbShowLines.Text" xml:space="preserve">
+    <value>Wiersze</value>
+    <comment>Линии</comment>
+  </data>
+  <data name="Autors.Text" xml:space="preserve">
+    <value>Autorzy</value>
+    <comment>Авторы</comment>
+  </data>
+  <data name="Cancel.Content" xml:space="preserve">
+    <value>Anuluj</value>
+    <comment>Cancel</comment>
+  </data>
+  <data name="CatalogMyName" xml:space="preserve">
+    <value>Moje</value>
+  </data>
+  <data name="CatalogSamplesName" xml:space="preserve">
+    <value>Przykłady</value>
+  </data>
+  <data name="CatalogSchemeStart" xml:space="preserve">
+    <value>początek</value>
+    <comment>Начать</comment>
+  </data>
+  <data name="CatalogStart" xml:space="preserve">
+    <value>początek</value>
+    <comment>Старт</comment>
+  </data>
+  <data name="Clear.Content" xml:space="preserve">
+    <value>Wyczyść</value>
+    <comment>Очистить</comment>
+  </data>
+  <data name="DeploymentPlan.Text" xml:space="preserve">
+    <value>Położenie</value>
+    <comment>План размещения</comment>
+  </data>
+  <data name="DeploymentPlanCircle.Content" xml:space="preserve">
+    <value>Okrąg</value>
+    <comment>По кругу</comment>
+  </data>
+  <data name="ErrorFileVimoDelete" xml:space="preserve">
+    <value>Nie można usunąć pliku</value>
+    <comment>Не могу удалить файл</comment>
+  </data>
+  <data name="ErrorFileVimoExport" xml:space="preserve">
+    <value>Nie można wyeksportować plik</value>
+    <comment>Не могу экспортировать файл</comment>
+  </data>
+  <data name="ErrorFileVimoImport" xml:space="preserve">
+    <value>Nie można zaimportować pliku</value>
+    <comment>Не могу импортировать файл</comment>
+  </data>
+  <data name="ErrorFileVimoRename" xml:space="preserve">
+    <value>Nie można zmienić nazwy pliku</value>
+    <comment>Не могу переименовать файл</comment>
+  </data>
+  <data name="ErrorReadFiles" xml:space="preserve">
+    <value>Wystąpił błąd podczas odczytu listy plików</value>
+  </data>
+  <data name="FileExist.Text" xml:space="preserve">
+    <value>Plik o tej nazwie już istnieje</value>
+    <comment>Файл с таким именем уже есть</comment>
+  </data>
+  <data name="FileName.Text" xml:space="preserve">
+    <value>Nazwa pliku</value>
+    <comment>Имя файла</comment>
+  </data>
+  <data name="FileVimoCopyTitle" xml:space="preserve">
+    <value>Kopiuj</value>
+    <comment>Сделать копию</comment>
+  </data>
+  <data name="FileVimoCopyTitleAction" xml:space="preserve">
+    <value>Kopiuj</value>
+    <comment>Копировать</comment>
+  </data>
+  <data name="FileVimoCopyToMyTitle" xml:space="preserve">
+    <value>Zrobić kopię z próbki do edycji</value>
+    <comment>Сделать свою копию образца для правки</comment>
+  </data>
+  <data name="FileVimoCopyToMyTitleAction" xml:space="preserve">
+    <value>Kopiuj</value>
+    <comment>Копировать</comment>
+  </data>
+  <data name="FileVimoDeleteTitle" xml:space="preserve">
+    <value>Usuwanie całego systemu?</value>
+    <comment>Удалить всю схему?</comment>
+  </data>
+  <data name="FileVimoDeleteTitleAction" xml:space="preserve">
+    <value>Usuń</value>
+    <comment>Удалить</comment>
+  </data>
+  <data name="FileVimoExportTitle" xml:space="preserve">
+    <value>Eksportuj</value>
+    <comment>Экспорт</comment>
+  </data>
+  <data name="FileVimoexportTitleAction" xml:space="preserve">
+    <value>Zapisz jako...</value>
+    <comment>Сохранить как...</comment>
+  </data>
+  <data name="FileVimoImportTitle" xml:space="preserve">
+    <value>Importuj</value>
+    <comment>Импорт</comment>
+  </data>
+  <data name="FileVimoImportTitleAction" xml:space="preserve">
+    <value>Wgraj od...</value>
+    <comment>Загрузить из...</comment>
+  </data>
+  <data name="FileVimoNewTitle" xml:space="preserve">
+    <value>Utworzyć pustą</value>
+    <comment>Создать пустую</comment>
+  </data>
+  <data name="FileVimoNewTitleAction" xml:space="preserve">
+    <value>Tworzenie</value>
+    <comment>Создать</comment>
+  </data>
+  <data name="FileVimoRenameTitle" xml:space="preserve">
+    <value>Zmień nazwę</value>
+    <comment>Переименовать</comment>
+  </data>
+  <data name="FileVimoRenameTitleAction" xml:space="preserve">
+    <value>Zmień nazwę</value>
+    <comment>Переименовать</comment>
+  </data>
+  <data name="LinePropAddStations" xml:space="preserve">
+    <value>Dodawanie stacji</value>
+  </data>
+  <data name="LinePropColor" xml:space="preserve">
+    <value>Kolor</value>
+    <comment>Цвет</comment>
+  </data>
+  <data name="LinePropNames" xml:space="preserve">
+    <value>Nazwy</value>
+    <comment>Наименования</comment>
+  </data>
+  <data name="LinePropRemove" xml:space="preserve">
+    <value>Usuń</value>
+  </data>
+  <data name="MapPropZoom" xml:space="preserve">
+    <value>Powiększenie</value>
+  </data>
+  <data name="MapVimoOpenError" xml:space="preserve">
+    <value>Nie można otworzyć pliku</value>
+  </data>
+  <data name="MapVimoSaveError" xml:space="preserve">
+    <value>Nie można zapisać pliku</value>
+  </data>
+  <data name="Name1.Text" xml:space="preserve">
+    <value>Nazwa</value>
+    <comment>Наименование</comment>
+  </data>
+  <data name="Name2.Text" xml:space="preserve">
+    <value>Nazwa macierzystego</value>
+    <comment>Наименование родное</comment>
+  </data>
+  <data name="ParamCoSegment.Header" xml:space="preserve">
+    <value>Współczynnik segmentu</value>
+    <comment>Коеффициент отрезка</comment>
+  </data>
+  <data name="ParamCoStation.Header" xml:space="preserve">
+    <value>Współczynnik stacji</value>
+    <comment>Коеффициент станции</comment>
+  </data>
+  <data name="ParamFontSize.Header" xml:space="preserve">
+    <value>Czcionka tekstu</value>
+    <comment>Шрифт текста</comment>
+  </data>
+  <data name="ParamIndent.Header" xml:space="preserve">
+    <value>Wcięcie</value>
+    <comment>Отступ</comment>
+  </data>
+  <data name="ParamIndentSegment.Header" xml:space="preserve">
+    <value>Tiret segmentu</value>
+    <comment>Отступ отрезка</comment>
+  </data>
+  <data name="ParamNumberNames.Header" xml:space="preserve">
+    <value>Liczba nazw</value>
+    <comment>Количество наименований</comment>
+  </data>
+  <data name="ParamPropBackgroundColor" xml:space="preserve">
+    <value>Tło</value>
+    <comment>Фон</comment>
+  </data>
+  <data name="ParamPropBuildColor" xml:space="preserve">
+    <value>Zbudowany</value>
+    <comment>Построенный</comment>
+  </data>
+  <data name="ParamPropColors" xml:space="preserve">
+    <value>Kolory</value>
+    <comment>Цвета</comment>
+  </data>
+  <data name="ParamPropDimedColor" xml:space="preserve">
+    <value>Nieaktywne</value>
+    <comment>Неактивный</comment>
+  </data>
+  <data name="ParamPropNames" xml:space="preserve">
+    <value>Nazwy</value>
+    <comment>Наименования</comment>
+  </data>
+  <data name="ParamPropThick" xml:space="preserve">
+    <value>Opcje</value>
+    <comment>Параметры</comment>
+  </data>
+  <data name="ParamPropTransferColor" xml:space="preserve">
+    <value>Transfer</value>
+    <comment>Пересадка</comment>
+  </data>
+  <data name="ParamRadius.Header" xml:space="preserve">
+    <value>Promień stacji</value>
+    <comment>Радиус станции</comment>
+  </data>
+  <data name="ParamTextIndent.Header" xml:space="preserve">
+    <value>Wcięcie tekstu</value>
+    <comment>Отступ текста</comment>
+  </data>
+  <data name="ParamThick.Header" xml:space="preserve">
+    <value>Grubość</value>
+    <comment>Толщина</comment>
+  </data>
+  <data name="ParamThickSegment.Header" xml:space="preserve">
+    <value>Grubość segmentu</value>
+    <comment>Толщина отрезка</comment>
+  </data>
+  <data name="ParamTransferWeight.Header" xml:space="preserve">
+    <value>Trudności z przejściem</value>
+    <comment>Трудность перехода</comment>
+  </data>
+  <data name="ParamWeightSegment.Header" xml:space="preserve">
+    <value>Waga z segmentu</value>
+    <comment>Вес отрезка</comment>
+  </data>
+  <data name="PasteLines.Text" xml:space="preserve">
+    <value>Wstawianie nazwy linii (nazwa1/nazwa2)</value>
+    <comment>Вставьте названия линий (имя1/имя2)</comment>
+  </data>
+  <data name="PasteStations.Text" xml:space="preserve">
+    <value>Wstaw nazw stacji (nazwa1/nazwa2)</value>
+    <comment>Вставьте названия станций (имя1/имя2)</comment>
+  </data>
+  <data name="Remove.Content" xml:space="preserve">
+    <value>Usuń</value>
+    <comment>Удалить</comment>
+  </data>
+  <data name="RemoveLine.Content" xml:space="preserve">
+    <value>Usunąć cały wiersz</value>
+    <comment>Удалить всю линию</comment>
+  </data>
+  <data name="RemoveLineStations.Content" xml:space="preserve">
+    <value>Usuń wszystkie stacje tylko</value>
+  </data>
+  <data name="RemoveStation.Content" xml:space="preserve">
+    <value>Usunąć stacji</value>
+    <comment>Удалить станцию</comment>
+  </data>
+  <data name="RotateNames.Text" xml:space="preserve">
+    <value>Obracaj nazwy</value>
+    <comment>Повернуть названия</comment>
+  </data>
+  <data name="RouteVariantHappy.Content" xml:space="preserve">
+    <value>Radosna</value>
+    <comment>Счастливый</comment>
+  </data>
+  <data name="RouteVariantHelpHappy.Text" xml:space="preserve">
+    <value>Wybierz wyjazd stacji i dowiedzieć się jakie stacji znajdziesz swoje szczęście.</value>
+    <comment>выберите станцию отправления и узнайте, на какой станции вас сейчас ждёт ваше счастье.</comment>
+  </data>
+  <data name="RouteVariantHelpHappyTitle.Text" xml:space="preserve">
+    <value>Radosna</value>
+    <comment>Счастливый</comment>
+  </data>
+  <data name="RouteVariantHelpOptimal.Text" xml:space="preserve">
+    <value>Wybierz swoich stacji wyjazdu i przeznaczenia, znajdziesz najlepsze trasy między nimi.</value>
+    <comment>выбрав станции отправления и назначения, вы увидите оптимальный маршрут между ними.</comment>
+  </data>
+  <data name="RouteVariantHelpOptimalLine.Text" xml:space="preserve">
+    <value>masz do wyboru nie tylko stacji, ale także określić żądaną linię dla stacji.</value>
+    <comment>вам придётся не только выбирать станции, но и указывать желаемые линии для станций пересадок.</comment>
+  </data>
+  <data name="RouteVariantHelpOptimalLineTitle.Text" xml:space="preserve">
+    <value>Optymalny wybór linii</value>
+    <comment>Оптимальный с выбором линии</comment>
+  </data>
+  <data name="RouteVariantHelpOptimalTitle.Text" xml:space="preserve">
+    <value>Optymalnie</value>
+    <comment>Оптимальный</comment>
+  </data>
+  <data name="RouteVariantHelpSmartmob.Text" xml:space="preserve">
+    <value>Schodzą na stacji, zamknięte bilety loterii. Jazdy trasy szczęśliwy! Możliwe jackpota podzielone proporcjonalnie uczestniczyć.</value>
+    <comment>Соберитесь у станции, опечатайте ваши лотерейные билеты. Проедьте счастливым маршрутом! Возможный джекпот разделите пропорционально участию.</comment>
+  </data>
+  <data name="RouteVariantHelpTitleSmartmob.Text" xml:space="preserve">
+    <value>Bystry tłum</value>
+    <comment>Смартмоб</comment>
+  </data>
+  <data name="RouteVariantOptimal.Content" xml:space="preserve">
+    <value>Optymalnie</value>
+    <comment>Оптимальный</comment>
+  </data>
+  <data name="RouteVariantOptimalLine.Text" xml:space="preserve">
+    <value>Optymalnie</value>
+    <comment>Оптимальный</comment>
+  </data>
+  <data name="RouteVariantOptimalLineLine.Text" xml:space="preserve">
+    <value>wybór wierszy</value>
+    <comment>с выбором линии</comment>
+  </data>
+  <data name="RouteVariantTitle.Text" xml:space="preserve">
+    <value>Wybór trasy</value>
+    <comment>Вариант маршрута</comment>
+  </data>
+  <data name="RouteWeight.Text" xml:space="preserve">
+    <value>Waga całej trasy</value>
+    <comment>Вес маршрута всего</comment>
+  </data>
+  <data name="SegmentPropLine" xml:space="preserve">
+    <value>Linia</value>
+    <comment>Линия</comment>
+  </data>
+  <data name="SegmentPropParam" xml:space="preserve">
+    <value>Opcje</value>
+    <comment>Параметры</comment>
+  </data>
+  <data name="StationPropNames" xml:space="preserve">
+    <value>Nazwy</value>
+    <comment>Наименования</comment>
+  </data>
+  <data name="StationPropParam" xml:space="preserve">
+    <value>Opcje</value>
+    <comment>Параметры</comment>
+  </data>
+  <data name="MenuCharacters.Text" xml:space="preserve">
+    <value>Znaki</value>
+  </data>
+  <data name="MenuEdit.Text" xml:space="preserve">
+    <value>Edytuj</value>
+  </data>
+  <data name="MenuFile.Text" xml:space="preserve">
+    <value>Plik</value>
+  </data>
+  <data name="MenuPin.Text" xml:space="preserve">
+    <value>Szpilka dachówka</value>
+  </data>
+  <data name="MenuSettings.Text" xml:space="preserve">
+    <value>Ustawienia</value>
+  </data>
+  <data name="MenuShowCatalog.Text" xml:space="preserve">
+    <value>Pokaż katalog</value>
+  </data>
+  <data name="MenuShowRoute.Text" xml:space="preserve">
+    <value>Pokaż trasę</value>
+  </data>
+  <data name="MenuUnpin.Text" xml:space="preserve">
+    <value>Odpinanie kafelków</value>
+  </data>
+  <data name="MenuClearSelection.Text" xml:space="preserve">
+    <value>Wyczyść zaznaczenie</value>
+  </data>
+  <data name="MenuZoom.Text" xml:space="preserve">
+    <value>Powiększenie</value>
+  </data>
+  <data name="MenuEditOff.Text" xml:space="preserve">
+    <value>Zapisać</value>
+  </data>
+</root>

@@ -1,0 +1,31 @@
+﻿<UserControl
+    x:Class="HappyRoute4.Views.Prop.LinePropAddLinesView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    >
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+        <Grid x:Name="root">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid Margin="10,10,10,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock x:Uid="PasteLines" VerticalAlignment="Bottom"/>
+                <Button Grid.Column="1" x:Uid="Clear" HorizontalAlignment="Right" Padding="2" FontSize="10" Command="{Binding ClearCommand}" Click="Button_Click"/>
+            </Grid>
+
+            <TextBox Grid.Row="1" Name="firsFocus" AcceptsReturn="True" Padding="3" Margin="10,5,10,5"
+                     ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                     Text="{Binding Lines,Mode=TwoWay}"/>
+
+            <Button Grid.Row="2" x:Uid="AddButton" Margin="10" Padding="10" HorizontalAlignment="Stretch" Command="{Binding AddCommand}"/>
+        </Grid>
+    </ScrollViewer>
+</UserControl>

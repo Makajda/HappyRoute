@@ -1,0 +1,20 @@
+﻿1,61803398875
+
+44033Makayda.HappyRoute
+
+Store
+en
+es
+it
+zh
+ko
+de
+pt
+ru
+fr
+ja
+pl
+tr
+
+Copyright © Makajda, 2017
+https://makajda.wordpress.com/

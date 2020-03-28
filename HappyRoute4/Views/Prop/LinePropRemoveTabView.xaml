@@ -1,0 +1,16 @@
+﻿<UserControl
+    x:Class="HappyRoute4.Views.Prop.LinePropRemoveTabView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    >
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Button Grid.Column="0" x:Uid="RemoveLine" Command="{Binding RemoveCommand}" Padding="20" Margin="20"/>
+        <Button Grid.Column="1" x:Uid="RemoveLineStations" Command="{Binding RemoveStationsCommand}" Padding="20" Margin="20"/>
+    </Grid>
+</UserControl>

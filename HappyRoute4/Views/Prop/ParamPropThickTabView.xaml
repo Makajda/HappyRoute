@@ -1,0 +1,25 @@
+﻿<UserControl
+    x:Class="HappyRoute4.Views.Prop.ParamPropThickTabView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:common="using:HappyRoute4.Common"
+    >
+
+    <UserControl.Resources>
+        <Style TargetType="common:Paramer">
+            <Setter Property="Margin" Value="3"/>
+        </Style>
+    </UserControl.Resources>
+
+    <StackPanel>
+        <common:Paramer x:Uid="ParamRadius" Value="{Binding MapVimo.Map.Param.Radius,Mode=TwoWay}"/>
+        <common:Paramer x:Uid="ParamTextIndent" Value="{Binding MapVimo.Map.Param.TextIndent,Mode=TwoWay}"/>
+        <common:Paramer x:Uid="ParamFontSize" Value="{Binding MapVimo.Map.Param.FontSize,Mode=TwoWay}"/>
+        <common:Paramer x:Uid="ParamIndent" Value="{Binding MapVimo.Map.Param.Indent,Mode=TwoWay}"/>
+        <common:Paramer x:Uid="ParamThick" Value="{Binding MapVimo.Map.Param.Thick,Mode=TwoWay}"/>
+        <common:Paramer x:Uid="ParamCoStation" Value="{Binding MapVimo.Map.Param.CoStation,Mode=TwoWay}" Delta="0.1"/>
+        <common:Paramer x:Uid="ParamCoSegment" Value="{Binding MapVimo.Map.Param.CoSegment,Mode=TwoWay}" Delta="0.1"/>
+        <common:Paramer x:Uid="ParamTransferWeight" Value="{Binding MapVimo.Map.Param.TransferWeight,Mode=TwoWay}"/>
+        <common:Paramer x:Uid="ParamNumberNames" Value="{Binding MapVimo.Map.Param.NumberNames,Mode=TwoWay}"/>
+    </StackPanel>
+</UserControl>

@@ -1,0 +1,18 @@
+﻿<UserControl
+    x:Class="HappyRoute4.Views.Prop.LinePropColorTabView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    >
+
+    <ColorPicker Color="{Binding Color, Mode=TwoWay}" 
+                 Opacity="1"
+                 ColorSpectrumShape="Ring"
+                 IsMoreButtonVisible="True"
+                 IsColorSliderVisible = "True"
+                 IsColorChannelTextInputVisible = "True"
+                 IsHexInputVisible = "True"
+                 IsAlphaEnabled = "True"
+                 IsAlphaSliderVisible = "False"
+                 IsAlphaTextInputVisible = "True"
+                 Margin="30"/>
+</UserControl>

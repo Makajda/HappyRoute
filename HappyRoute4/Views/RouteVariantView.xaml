@@ -1,0 +1,75 @@
+﻿<UserControl
+    x:Class="HappyRoute4.Views.RouteVariantView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    >
+
+    <UserControl.Resources>
+        <Style x:Key="SplitViewMenuFontIconStyle" TargetType="FontIcon">
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="Width" Value="48" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="IsHitTestVisible" Value="True" />
+        </Style>
+    </UserControl.Resources>
+
+    <Grid Background="Pink" MaxWidth="500" Padding="30">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <RadioButton Grid.Column="0" x:Name="rbHappy" x:Uid="RouteVariantHappy" Checked="Happy_Checked" GroupName="hol"
+                     Margin="5" MinHeight="150" Style="{StaticResource SettingsToggleButtonStyle}"/>
+        <RadioButton Grid.Column="1" x:Name="rbOptimal" x:Uid="RouteVariantOptimal" Checked="Optimal_Checked" GroupName="hol"
+                     Margin="5" MinHeight="150" Style="{StaticResource SettingsToggleButtonStyle}"/>
+        <RadioButton Grid.Column="2" x:Name="rbOptimalLine" Checked="OptimalLine_Checked" GroupName="hol"
+                     Margin="5" MinHeight="150" Style="{StaticResource SettingsToggleButtonStyle}">
+            <StackPanel>
+                <TextBlock x:Uid="RouteVariantOptimalLine" TextWrapping="Wrap" HorizontalAlignment="Center" Margin="5"/>
+                <TextBlock x:Uid="RouteVariantOptimalLineLine" TextWrapping="Wrap" TextAlignment="Center" FontStyle="Italic" HorizontalAlignment="Center" Margin="5"/>
+            </StackPanel>
+        </RadioButton>
+
+        <RichTextBlock Grid.Row="1" Grid.ColumnSpan="3" IsTextSelectionEnabled="True" TextAlignment="Justify"
+                       TextIndent="12" FontSize="16" FontFamily="Segoe UI" Foreground="Black" Margin="5">
+            <Paragraph>
+                <Bold Foreground="DarkSlateBlue" FontSize="18">
+                    <Run x:Uid="RouteVariantHelpHappyTitle"/>
+                </Bold>
+                -
+                <Run x:Uid="RouteVariantHelpHappy"/>
+            </Paragraph>
+            <Paragraph>
+                <Bold Foreground="DarkSlateBlue" FontSize="18">
+                    <Run x:Uid="RouteVariantHelpOptimalTitle"/>
+                </Bold>
+                -
+                <Run x:Uid="RouteVariantHelpOptimal"/>
+            </Paragraph>
+            <Paragraph>
+                <Bold Foreground="DarkSlateBlue" FontSize="18">
+                    <Run x:Uid="RouteVariantHelpOptimalLineTitle"/>
+                </Bold>
+                -
+                <Run x:Uid="RouteVariantHelpOptimalLine"/>
+            </Paragraph>
+            <Paragraph/>
+            <Paragraph>
+                <Bold>
+                    <Italic Foreground="DarkSlateBlue" FontSize="18">
+                        <Run x:Uid="RouteVariantHelpTitleSmartmob"/>
+                    </Italic>
+                </Bold>
+                <Run x:Uid="RouteVariantHelpSmartmob"/>
+            </Paragraph>
+        </RichTextBlock>
+    </Grid>
+</UserControl>
+
